@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.form = new ValidationManager({
       'email': 'required|email',
-      'password': 'required'
+      'password': 'required|minLength:6'
     });
   }
   save() {
