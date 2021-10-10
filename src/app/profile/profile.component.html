@@ -1,0 +1,38 @@
+<div class="gradient">
+  <div id="panel" class="" *ngIf="patientHealthInfo">
+    <div id="inside-panel">
+      <div class="gradient-border">
+        <h3>Health Status</h3>
+        <hr>
+        <ul>
+          <li><b>BMI:</b><span id="age">{{patientHealthInfo.Health_Status.BMI}}</span></li>
+          <li><b>BP:</b><span id="title">{{patientHealthInfo.Health_Status.BP}}</span></li>
+          <li><b>Height:</b><span id="hometown">{{patientHealthInfo.Health_Status.Height}}</span></li>
+          <li><b>Pulse Rate:</b><span id="hometown">{{patientHealthInfo.Health_Status.Pulse_Rate}}</span></li>
+          <li><b>Weight:</b><span id="hometown">{{patientHealthInfo.Health_Status.Weight}}</span></li>
+        </ul>
+        <h3>Medical Condition</h3>
+        <hr>
+        <ul>
+          <li><b>Diabetics:</b><span id="age">{{patientHealthInfo.Medical_Condition.Diabetics}}</span></li>
+          <li><b>Heart_Disease:</b><span id="title">{{patientHealthInfo.Medical_Condition.Heart_Disease}}</span></li>
+          <h5>Blood Pressure</h5>
+          <ul>
+            <li><b>High_BP:</b><span id="age">{{patientHealthInfo.Medical_Condition.Blood_Pressure.High_BP}}</span></li>
+            <li><b>Low_BP:</b><span id="title">{{patientHealthInfo.Medical_Condition.Blood_Pressure.Low_BP}}</span></li>
+          </ul>
+        </ul>
+
+        <h3>Personal Info</h3>
+        <hr>
+        <ul>
+          <li><b>Age:</b><span id="age">{{patientHealthInfo.Personal_info.Age}}</span></li>
+          <li><b>Email:</b><span id="title">{{patientHealthInfo.Personal_info.Email}}</span></li>
+          <li><b>Name:</b><span id="hometown">{{patientHealthInfo.Personal_info.Name}}</span></li>
+          <li><b>Phone:</b><span id="hometown">{{patientHealthInfo.Personal_info.Phone}}</span></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
